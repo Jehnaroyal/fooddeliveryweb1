@@ -1,0 +1,1722 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* for desktop view*/
+body {
+    background-color: #fff;
+}
+
+/*nav bar section starts*/
+main .header {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(39, 37, 37);
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 0.6% 6%;
+    justify-content: space-evenly;
+}
+
+nav img {
+    width: 100px;
+    padding-top: 10px;
+}
+
+nav .menu-imgone img {
+    width: 23px;
+    padding: 0px 4px;
+    margin-top: 8px;
+}
+
+nav .menu-imgtwo img {
+    width: 23px;
+    padding: 0px 4px;
+    margin-top: 8px;
+}
+
+nav .menu-imgthree img {
+    width: 23px;
+    padding: 0px 4px;
+    margin-top: 8px;
+}
+
+nav .iconimgc {
+    display: none;
+}
+
+nav .iconimgo {
+    display: none;
+}
+
+.wrapper { /*for the div that holds the nav tags*/
+    flex-grow: 0.3;
+    margin-left: 150px;
+}
+
+.wrapper ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 34px 0px 0px;
+    position: relative;
+}
+
+.wrapper ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper ul li :hover {
+    color: orange;
+}
+
+
+/* for phones and smaller devices*/
+@media (max-width: 767px) {
+    nav {
+        display: flex;
+        align-items: center;
+        padding: 0.5% 6%;
+    
+    }
+
+    nav .iconimgc {
+        display: block;
+        margin: 10px;
+        width: 18px;
+        cursor: pointer;
+    }
+
+    nav .iconimgo {
+        margin-left: 200px;
+        width: 18px;
+        cursor: pointer;
+        display: block;
+        margin-top: 8px;
+    }
+    
+    nav img {
+        width: 80px;
+    
+    }
+    
+    nav .menu-imgone img {
+        display: none;
+    }
+    
+    nav .menu-imgtwo img {
+        display: none;
+    }
+    
+    nav .menu-imgthree img {
+        display: none;
+    }
+    
+    .wrapper { /*for the div that holds the nav tags*/
+        flex-grow: 0.3;
+        position: absolute;
+        background: orange;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;/*to make the menu icon show*/
+        text-align: left;
+        z-index: 2;
+        transition: 0.5s;
+    }
+    
+    .logo-btn {
+        flex-grow: 0;
+        margin-top: 8px;
+    }
+
+    .wrapper ul {
+        margin: 25px;
+    }
+    
+    .wrapper ul li {
+      display: block;
+      margin: 15px;
+    }
+    
+    .wrapper ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 400;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+
+/*for ipads tablets and other devices with wide screens*/
+@media  (min-width: 768px) and (max-width: 1024px) {
+    main .header {
+        width: 100%;
+        height: 50px;
+        background-color: rgb(39, 37, 37);
+    }
+    
+    nav {
+        display: flex;
+        align-items: center;
+        padding: 0.5% 6%;
+        justify-content: space-evenly;
+    }
+    
+    nav img {
+        width: 100px;
+        padding-top: 10px;
+    }
+    
+    nav .menu-imgone img {
+        width: 23px;
+        padding: 0px 4px;
+        margin-top: 8px;
+    }
+    
+    nav .menu-imgtwo img {
+        width: 23px;
+        padding: 0px 4px;
+        margin-top: 8px;
+    }
+    
+    nav .menu-imgthree img {
+        width: 23px;
+        padding: 0px 4px;
+        margin-top: 8px;
+    }
+    
+    nav .iconimgc {
+        display: none;
+    }
+    
+    nav .iconimgo {
+        display: none;
+    }
+    
+    .wrapper { /*for the div that holds the nav tags*/
+        flex-grow: 0.2;
+        margin-left: 30px;
+    }
+    
+    .wrapper ul li {
+        list-style: none;
+        display: inline-block;
+        padding: 8px 20px 0px 0px;
+        position: relative;
+    }
+    
+    .wrapper ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 400;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+
+/*for desktop and other devices with large screens*/
+@media  (min-width: 1025px) and (max-width: 1200px) {
+    main .header {
+        width: 100%;
+        height: 50px;
+        background-color: rgb(39, 37, 37);
+    }
+    
+    nav {
+        display: flex;
+        align-items: center;
+        padding: 0.5% 6%;
+        justify-content: space-evenly;
+    }
+    
+    nav img {
+        width: 100px;
+        padding-top: 10px;
+    }
+    
+    nav .menu-imgone img {
+        width: 23px;
+        padding: 0px 4px;
+        margin-top: 8px;
+    }
+    
+    nav .menu-imgtwo img {
+        width: 23px;
+        padding: 0px 4px;
+        margin-top: 8px;
+    }
+    
+    nav .menu-imgthree img {
+        width: 23px;
+        padding: 0px 4px;
+        margin-top: 8px;
+    }
+    
+    nav .iconimgc {
+        display: none;
+    }
+    
+    nav .iconimgo {
+        display: none;
+    }
+    
+    .wrapper { /*for the div that holds the nav tags*/
+        flex-grow: 0.1;
+        margin-left: 50px;
+    }
+    
+    .wrapper ul li {
+        list-style: none;
+        display: inline-block;
+        padding: 8px 25px 0px 0px;
+        position: relative;
+    }
+    
+    .wrapper ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 400;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+}
+/*nav bar section ends*/
+
+
+/* headertwo section*/
+/*sign up section with background image starts*/
+main .headertwo {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7),rgba(4, 9, 30, 0.7)) ,url(images1/pexels-valeria-boltneva-1251198.jpg);
+    width: 100%;
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding-top: 25px;
+    /*box-shadow: 0px 1px 1px #d6d4d4;*/
+}
+
+main .headertwo .homediv  {
+    display: block;
+    margin: 0 auto;
+    width: 500px;
+    height: 100px;
+    padding-top: 75px;
+   text-align: center;
+}
+
+main .headertwo .homediv h1 a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 50px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 0px 1px 1px #706d6d;
+}
+
+main .headertwo .homediv img {
+    width: 15px;
+}
+
+.headertwo .homediv .homedivelements {
+    display: flex;
+    margin: 13px 0px 0px 200px;
+}
+
+.headertwo .homediv .homedivelements h6 a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 300;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.headertwo .homediv .homedivelements h6 a:hover{
+    color: orange;
+}
+
+.headertwo .homediv .homedivelements img {
+    width: 9px;
+    height: 9px;
+    margin: 4px 5px 0px 5px;
+    margin-top: 4px;
+}
+
+
+@media (max-width: 767px) {
+    main .headertwo {
+        background-image: linear-gradient(rgba(4, 9, 30, 0.397),rgba(4, 9, 30, 0.459)) ,url(images1/pexels-valeria-boltneva-1251198.jpg);
+        width: 100%;
+        height: 140px;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        box-shadow: 0px 1px 1px #d6d4d4;
+        padding-top: 10px;
+    }
+    
+    main .headertwo .homediv  {
+        display: block;
+        margin: 0 auto;
+        width: 350px;
+        height: 100px;
+        padding-top: 50px;
+        text-align: center;
+    }
+    
+    main .headertwo .homediv h1 a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 30px;
+        font-weight: 600;
+        font-family: Arial, Helvetica, sans-serif;
+        text-shadow: 0px 1px 1px #706d6d;
+    }
+    
+    main .headertwo .homediv img {
+        width: 15px;
+    }
+    
+    .headertwo .homediv .homedivelements {
+        display: flex;
+        margin: 13px 0px 0px 130px;
+       
+    }
+    
+    .headertwo .homediv .homedivelements h6 a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 13px;
+        font-weight: 300;
+        font-family: Arial, Helvetica, sans-serif;
+        
+    }
+    
+    .headertwo .homediv .homedivelements h6 a:hover{
+        color: orange;
+    }
+    
+    .headertwo .homediv .homedivelements img {
+        width: 9px;
+        height: 9px;
+        margin: 4px 5px 0px 5px;
+        margin-top: 4px;
+    }
+}
+/*sign up section with background image ends*/
+
+
+/*faq section styling*/
+section .faqheaderdiv {
+    background-color: #fff;/* brown color before*/
+    height: 530px;
+    /*display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    /*margin-left: 100px;*/
+    width: 66%;
+    display: inline-flexbox;/**/
+    margin: 0 auto;/**/
+    padding-top: 100px;
+    margin-bottom: 250px;
+    /*justify-content: space-between;/**/
+}
+
+section .faqheaderdiv .faqheaderdiv-one {
+    background-color: #fff;/*cadetblue*/
+    height: 120px;
+}
+
+section .faqheaderdiv .faqheaderdiv-one h2 {
+   text-align: center;
+   padding-top: 45px;
+   font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 750;
+    text-transform: capitalize;
+}
+
+section .faqheaderdiv .faqheaderdiv-one p {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: 550;
+    color: #111;
+    padding-top: 10px;
+}
+
+section .faqheaderdiv .faqheaderdiv-two {
+    background-color: #fff;/*red*/
+    height: 163px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+section .faqheaderdiv .faqheaderdiv-two .servefooddiv {
+    background-color: rgba(231, 229, 229, 0.466);/*green*/
+    height: 135px;
+    width: 49%;
+    margin-top: 10px;
+}
+
+section .faqheaderdiv .faqheaderdiv-two .servefooddiv h3 {
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: #111;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+section .faqheaderdiv .faqheaderdiv-two .servefooddiv p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    padding-left: 15px;
+    color: grey;
+}
+
+section .faqheaderdiv .faqheaderdiv-two .intouchdiv {
+    background-color: rgba(231, 229, 229, 0.466);/*green*/
+    height: 135px;
+    width: 49%;
+    margin-top: 10px;
+}
+
+section .faqheaderdiv .faqheaderdiv-two .intouchdiv h3 {
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: #111;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+section .faqheaderdiv .faqheaderdiv-two .intouchdiv p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    padding-left: 15px;
+    color: grey;
+}
+/**/
+section .faqheaderdiv .faqheaderdiv-three {
+    background-color: #fff;/*blue*/
+    height: 150px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+section .faqheaderdiv .faqheaderdiv-three .qualityfooddiv {
+    background-color: rgba(231, 229, 229, 0.466);/*green*/
+    height: 135px;
+    width: 49%;
+    margin-top: 10px;
+}
+
+section .faqheaderdiv .faqheaderdiv-three .qualityfooddiv h3 {
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: #111;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+section .faqheaderdiv .faqheaderdiv-three .qualityfooddiv p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    padding-left: 15px;
+    color: grey;
+}
+
+section .faqheaderdiv .faqheaderdiv-three .deliverdiv {
+    background-color: rgba(231, 229, 229, 0.466);
+    height: 135px;
+    width: 49%;
+    margin-top: 10px;
+}
+
+section .faqheaderdiv .faqheaderdiv-three .deliverdiv h3 {
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: #111;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+section .faqheaderdiv .faqheaderdiv-three .deliverdiv p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    padding-left: 15px;
+    color: grey;
+}
+
+/*2*/
+
+section .faqheaderdiv .faqheaderdiv-four {
+    background-color: #fff;/*blue*/
+    height: 90px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+section .faqheaderdiv .faqheaderdiv-four .homedeliverydiv {
+    background-color: rgba(231, 229, 229, 0.466);/*green*/
+    height: 55px;
+    width: 49%;
+    margin-top: 10px;
+}
+
+section .faqheaderdiv .faqheaderdiv-four .homedeliverydiv h3 {
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: #111;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+section .faqheaderdiv .faqheaderdiv-four .homedeliverydiv p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    padding-left: 15px;
+    color: grey;
+}
+
+section .faqheaderdiv .faqheaderdiv-four .restaurantdiv {
+    background-color: rgba(231, 229, 229, 0.466);
+    height: 55px;
+    width: 49%;
+    margin-top: 10px;
+}
+
+section .faqheaderdiv .faqheaderdiv-four .restaurantdiv h3 {
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: #111;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+section .faqheaderdiv .faqheaderdiv-four .restaurantdiv p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    padding-left: 15px;
+    color: grey;
+}
+
+@media (max-width: 767px) {
+    section .faqheaderdiv {
+        background-color: #fff;/* brown color before*/
+        height: 530px;
+        /*display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        /*margin-left: 100px;*/
+        width: 69%;
+        display: block;/**/
+        margin: 0 auto;/**/
+        padding-top: 30px;
+        /*justify-content: space-between;/**/
+    }
+    
+    section .faqheaderdiv .faqheaderdiv-one {
+        background-color: #fff;/*cadetblue*/
+        height: 120px;
+    }
+    
+    section .faqheaderdiv .faqheaderdiv-one h2 {
+       text-align: center;
+       padding-top: 17px;
+       font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 750;
+        text-transform: capitalize;
+        text-align: center;
+    }
+    
+    section .faqheaderdiv .faqheaderdiv-one p {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 11px;
+        font-weight: 550;
+        color: #111;
+        padding-top: 10px;
+    }
+    
+    section .faqheaderdiv .faqheaderdiv-two {
+        background-color: #fff;/*red*/
+        height: 250px;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    section .faqheaderdiv .faqheaderdiv-two .servefooddiv {
+        background-color: rgba(231, 229, 229, 0.466);/*green*/
+        height: 125px;
+        width: 100%;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    
+    section .faqheaderdiv .faqheaderdiv-two .servefooddiv h3 {
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        color: #111;
+        padding-bottom: 5px;
+        padding-left: 5px;
+        padding-top: 5px;
+        text-align: center;
+    }
+    
+    section .faqheaderdiv .faqheaderdiv-two .servefooddiv p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        padding-left: 5px;
+        text-align: center;
+    }
+    
+    section .faqheaderdiv .faqheaderdiv-two .intouchdiv {
+        background-color: rgba(231, 229, 229, 0.466);/*green*/
+        height: 125px;
+        width: 100%;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    
+    section .faqheaderdiv .faqheaderdiv-two .intouchdiv h3 {
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        color: #111;
+        padding-bottom: 5px;
+        padding-left: 5px;
+        padding-top: 5px;
+        text-align: center;
+    }
+    
+    section .faqheaderdiv .faqheaderdiv-two .intouchdiv p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        padding-left: 5px;
+        text-align: center;
+    }
+    /**/
+    section .faqheaderdiv .faqheaderdiv-three {
+        background-color: #fff;/*cyan*/
+        height: 250px;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    section .faqheaderdiv .faqheaderdiv-three .qualityfooddiv {
+        background-color: rgba(231, 229, 229, 0.466);/*green*/
+        height: 250px;
+        width: 100%;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    
+    section .faqheaderdiv .faqheaderdiv-three .qualityfooddiv h3 {
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        color: #111;
+        padding-bottom: 5px;
+        padding-left: 5px;
+        padding-top: 5px;
+        text-align: center;
+    }
+    
+    section .faqheaderdiv .faqheaderdiv-three .qualityfooddiv p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        padding-left: 5px;
+        text-align: center;
+    }
+    
+    section .faqheaderdiv .faqheaderdiv-three .deliverdiv {
+        background-color: rgba(231, 229, 229, 0.466);/*green*/
+        height: 250px;
+        width: 100%;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    
+    section .faqheaderdiv .faqheaderdiv-three .deliverdiv h3 {
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        color: #111;
+        padding-bottom: 5px;
+        padding-left: 5px;
+        padding-top: 5px;
+        text-align: center;
+    }
+    
+    section .faqheaderdiv .faqheaderdiv-three .deliverdiv p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        padding-left: 5px;
+        text-align: center;
+    }
+    
+    /*2*/
+    
+    section .faqheaderdiv .faqheaderdiv-four {
+        background-color: #fff;/*blue*/
+        height: 80px;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    section .faqheaderdiv .faqheaderdiv-four .homedeliverydiv {
+        background-color: rgba(231, 229, 229, 0.466);/*green*/
+        height: 80px;
+        width: 100%;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    
+    section .faqheaderdiv .faqheaderdiv-four .homedeliverydiv h3 {
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        color: #111;
+        padding-bottom: 5px;
+        padding-left: 5px;
+        padding-top: 5px;
+        text-align: center;
+    }
+    
+    section .faqheaderdiv .faqheaderdiv-four .restaurantdiv {
+        background-color: rgba(231, 229, 229, 0.466);/*green*/
+        height: 80px;
+        width: 100%;
+        margin-top: 5px;
+    }
+    
+    section .faqheaderdiv .faqheaderdiv-four .restaurantdiv h3 {
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        color: #111;
+        padding-bottom: 5px;
+        padding-left: 5px;
+        padding-top: 5px;
+        text-align: center;
+    }
+
+    section  {
+        background-color: #fff;
+        height: 800px;
+        width: 100%;
+    }
+}
+
+@media  (min-width: 768px) and (max-width: 1024px) {
+    section .faqheaderdiv {
+        background-color: #fff;/* brown color before*/
+        height: 530px;
+        /*display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        /*margin-left: 100px;*/
+        width: 85%;
+        display: inline-flexbox;/**/
+        margin: 0 auto;/**/
+        padding-top: 98px;
+        /*justify-content: space-between;/**/
+    }
+    
+    section .faqheaderdiv .faqheaderdiv-one {
+        background-color: #fff;/*cadetblue*/
+        height: 120px;
+    }
+    
+    section .faqheaderdiv .faqheaderdiv-one h2 {
+       text-align: center;
+       padding-top: 30px;
+       font-size: 35px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 750;
+        text-transform: capitalize;
+    }
+    
+    section .faqheaderdiv .faqheaderdiv-one p {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        font-weight: 550;
+        color: #111;
+        padding-top: 15px;
+    }
+    
+    section .faqheaderdiv .faqheaderdiv-two {
+        background-color: #fff;/*red*/
+        height: 180px;/*163px*/
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    section .faqheaderdiv .faqheaderdiv-two .servefooddiv {
+        background-color: rgba(231, 229, 229, 0.466);/*green*/
+        height: 155px;
+        width: 49%;
+        margin-top: 10px;
+    }
+    
+    section .faqheaderdiv .faqheaderdiv-two .servefooddiv h3 {
+        font-size: 17px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        color: #111;
+        padding-bottom: 8px;
+        padding-left: 15px;
+        padding-top: 15px;
+    }
+    
+    section .faqheaderdiv .faqheaderdiv-two .servefooddiv p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        padding-left: 15px;
+    }
+    
+    section .faqheaderdiv .faqheaderdiv-two .intouchdiv {
+        background-color: rgba(231, 229, 229, 0.466);/*green*/
+        height: 155px;
+        width: 49%;
+        margin-top: 10px;
+    }
+    
+    section .faqheaderdiv .faqheaderdiv-two .intouchdiv h3 {
+        font-size: 17px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        color: #111;
+        padding-bottom: 8px;
+        padding-left: 15px;
+        padding-top: 15px;
+    }
+    
+    section .faqheaderdiv .faqheaderdiv-two .intouchdiv p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        padding-left: 15px;
+    }
+    /**/
+    section .faqheaderdiv .faqheaderdiv-three {
+        background-color: #fff;/*blue*/
+        height: 180px;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    section .faqheaderdiv .faqheaderdiv-three .qualityfooddiv {
+        background-color: rgba(231, 229, 229, 0.466);/*green*/
+        height: 155px;
+        width: 49%;
+        margin-top: 10px;
+    }
+    
+    section .faqheaderdiv .faqheaderdiv-three .qualityfooddiv h3 {
+        font-size: 17px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        color: #111;
+        padding-bottom: 8px;
+        padding-left: 15px;
+        padding-top: 15px;
+    }
+    
+    section .faqheaderdiv .faqheaderdiv-three .qualityfooddiv p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        padding-left: 15px;
+    }
+    
+    section .faqheaderdiv .faqheaderdiv-three .deliverdiv {
+        background-color: rgba(231, 229, 229, 0.466);/*green*/
+        height: 155px;
+        width: 49%;
+        margin-top: 10px;
+    }
+    
+    section .faqheaderdiv .faqheaderdiv-three .deliverdiv h3 {
+        font-size: 17px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        color: #111;
+        padding-bottom: 8px;
+        padding-left: 15px;
+        padding-top: 15px;
+    }
+    
+    section .faqheaderdiv .faqheaderdiv-three .deliverdiv p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        padding-left: 15px;
+    }
+    
+    /*2*/
+    
+    section .faqheaderdiv .faqheaderdiv-four {
+        background-color: #fff;/*blue*/
+        height: 90px;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    section .faqheaderdiv .faqheaderdiv-four .homedeliverydiv {
+        background-color: rgba(231, 229, 229, 0.466);/*green*/
+        height: 60px;
+        width: 49%;
+        margin-top: 10px;
+    }
+    
+    section .faqheaderdiv .faqheaderdiv-four .homedeliverydiv h3 {
+        font-size: 17px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        color: #111;
+        padding-bottom: 15px;
+        padding-left: 15px;
+        padding-top: 18px;
+    }
+    
+    section .faqheaderdiv .faqheaderdiv-four .restaurantdiv {
+        background-color: rgba(231, 229, 229, 0.466);/*green*/
+        height: 60px;
+        width: 49%;
+        margin-top: 10px;
+    }
+    
+    section .faqheaderdiv .faqheaderdiv-four .restaurantdiv h3 {
+        font-size: 17px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        color: #111;
+        padding-bottom: 15px;
+        padding-left: 15px;
+        padding-top: 18px;
+    }
+
+    section  {
+        background-color: #fff;
+        height: 800px;
+        width: 100%;
+    }
+    
+}
+
+/* header four section*/
+main .headerfour {
+    background-color: #111;
+    height: 500px;
+    width: 100%;
+}
+
+main .headerfour .headerfourwrapper {
+    background-color: #111;/*grey color before*/
+    width: 95%;
+    height: 500px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 60px;
+}
+
+/* support section starts here*/
+main .headerfour .headerfourwrapper .support-div  {
+    background-color: #111;/* aqua color before*/
+    height: 80px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    /*margin-left: 100px;*/
+    width: 69%;
+    border-bottom: 1px solid orange;
+    display: inline-flexbox;/**/
+    margin: 0 auto;/**/
+    justify-content: space-between;/**/
+}
+
+main .headerfour .headerfourwrapper .support-div .support-divwrapper {
+    /*margin-right: 185.6px;*/
+    width: 400px;
+}
+
+main .headerfour .headerfourwrapper .support-div .support-divwrapper .support-divwrapperspan {
+    color: orange;
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+main .headerfour .headerfourwrapper .support-div .support-divwrapper .support-divwrapperspantwo {
+    color: #fff;
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+/*style="font-size: 28px; font-family: Arial, Helvetica, sans-serif; font-weight: 700; color: #fff;"*/
+
+main .headerfour .headerfourwrapper .support-div p {
+    font-size: 12px;
+    font-weight: 550;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    padding-top: 8px;
+}
+
+.disp {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+main .headerfour .headerfourwrapper .support-div form .name-holder {
+    width: 200px;
+    height: 33px;
+    border-radius: 3px;
+    border: 1px solid orange;
+    margin-top: 10px;
+    background-color: orange;
+}
+
+/*placeholder styling*/
+main .headerfour .headerfourwrapper .support-div form  input::placeholder {
+    color: #fff;
+    padding-left: 10px;
+}
+
+main .headerfour .headerfourwrapper .support-div form  .signupbtn {
+    width: 110px;
+    height: 33px;
+    border-radius: 3px;
+    border: 1px solid #fff;
+    margin-top: 10px;
+    color: orange;
+    cursor: pointer;
+    margin-left: 8px;
+}
+
+.input-controltwo input:focus {
+    outline: 0;
+}
+
+.input-controltwo input {
+    padding: 5px;
+}
+
+@media (max-width: 767px) {
+    main .headerfour .headerfourwrapper {
+        background-color: #111;/*grey color before*/
+        width: 95%;
+        height: 200px;
+        display: block;
+        margin: 0 auto;
+        padding-top: 60px;
+    }
+    
+    main .headerfour .headerfourwrapper .support-div  {
+        background-color: #111;/* aqua color before*/
+        height: 60px;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        /*margin-left: 100px;*/
+        width: 87%;
+        border-bottom: 1px solid orange;
+        display: inline-flexbox;/**/
+        margin: 0 auto;/**/
+        justify-content: space-between;/**/
+    }
+    
+    main .headerfour .headerfourwrapper .support-div .support-divwrapper {
+        /*margin-right: 185.6px;*/
+        width: 95px;
+    }
+    
+    main .headerfour .headerfourwrapper .support-div .support-divwrapper .support-divwrapperspan {
+        color: orange;
+        font-size: 13px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 550;
+    }
+    
+    main .headerfour .headerfourwrapper .support-div .support-divwrapper .support-divwrapperspantwo {
+        color: #fff;
+        font-size: 13px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 550;
+    }
+    /*style="font-size: 28px; font-family: Arial, Helvetica, sans-serif; font-weight: 700; color: #fff;"*/
+    
+    main .headerfour .headerfourwrapper .support-div p {
+        /*font-size: 12px;
+        font-weight: 550;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #fff;
+        padding-top: 8px;*/
+        display: none;
+    }
+    
+    main .headerfour .headerfourwrapper .support-div form .name-holder {
+        width: 100px;
+        height: 28px;
+        border-radius: 3px;
+        border: 1px solid orange;
+        margin-top: 10px;
+        background-color: orange;
+    }
+
+    /*placeholder styling*/
+    main .headerfour .headerfourwrapper .support-div form  input::placeholder {
+        color: #fff;
+        padding-left: 3px;
+        font-size: 11px;
+        font-weight: 500;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    main .headerfour .headerfourwrapper .support-div form  .signupbtn {
+        width: 65px;
+        height: 28px;
+        border-radius: 3px;
+        border: 1px solid #fff;
+        margin-top: 10px;
+        color: orange;
+    }
+
+    
+}
+
+
+/*for ipads tablets and other devices with wide screens*/
+@media  (min-width: 768px) and (max-width: 1024px) {
+    main .headerfour .headerfourwrapper {
+        background-color: #111;/*grey color before*/
+        width: 95%;
+        height: 200px;
+        display: block;
+        margin: 0 auto;
+        padding-top: 60px;
+    }
+    
+    main .headerfour .headerfourwrapper .support-div  {
+        background-color: #111;/* aqua color before*/
+        height: 85px;/**/
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        margin-left: 30px;
+        width: 91%;
+        border-bottom: 1px solid orange;
+        display: inline-flexbox;/**/
+        margin: 0 auto;/**/
+        justify-content: space-between;/**/
+    }
+    
+    main .headerfour .headerfourwrapper .support-div .support-divwrapper {
+       /* margin-right: 80px;*/
+       width: 300px;
+    }
+    
+    main .headerfour .headerfourwrapper .support-div .support-divwrapper .support-divwrapperspan {
+        color: orange;
+        font-size: 20px;/**/
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+    }
+    
+    main .headerfour .headerfourwrapper .support-div .support-divwrapper .support-divwrapperspantwo {
+        color: #fff;
+        font-size: 20px;/**/
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+    }
+    /*style="font-size: 28px; font-family: Arial, Helvetica, sans-serif; font-weight: 700; color: #fff;"*/
+    
+    main .headerfour .headerfourwrapper .support-div p {
+        font-size: 9px;/**/
+        font-weight: 550;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #fff;
+        padding-top: 8px;
+    }
+    
+    main .headerfour .headerfourwrapper .support-div form .name-holder {
+        width: 200px;/**/
+        height: 33px;
+        border-radius: 3px;
+        border: 1px solid orange;
+        margin-top: 10px;
+        background-color: orange;
+    }
+
+    ::placeholder {
+        padding-left: 12px;/**/
+        color: #fff;
+        text-decoration: none;
+        font-size: 12px;
+        font-weight: 600;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    main .headerfour .headerfourwrapper .support-div form  .signupbtn {
+        width: 110px;/**/
+        height: 33px;
+        border-radius: 3px;
+        border: 1px solid #fff;
+        margin-top: 10px;
+        color: orange;
+    }
+    
+}
+
+@media  (min-width: 1025px) and (max-width: 1200px) {
+    main .headerfour .headerfourwrapper {
+        background-color: #111;/*grey color before*/
+        width: 95%;
+        height: 200px;
+        display: block;
+        margin: 0 auto;
+        padding-top: 60px;
+    }
+    
+    main .headerfour .headerfourwrapper .support-div  {
+        background-color: #111;/* aqua color before*/
+        height: 80px;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        /*margin-left: 100px;*/
+        width: 69%;
+        border-bottom: 1px solid orange;
+        display: inline-flexbox;/**/
+        margin: 0 auto;/**/
+        justify-content: space-between;/**/
+    }
+    
+    main .headerfour .headerfourwrapper .support-div .support-divwrapper {
+        /*margin-right: 185.6px;*/
+        width: 400px;
+    }
+    
+    main .headerfour .headerfourwrapper .support-div .support-divwrapper .support-divwrapperspan {
+        color: orange;
+        font-size: 22px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+    }
+    
+    main .headerfour .headerfourwrapper .support-div .support-divwrapper .support-divwrapperspantwo {
+        color: #fff;
+        font-size: 22px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+    }
+    /*style="font-size: 28px; font-family: Arial, Helvetica, sans-serif; font-weight: 700; color: #fff;"*/
+    
+    main .headerfour .headerfourwrapper .support-div p {
+        font-size: 10px;
+        font-weight: 550;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #fff;
+        padding-top: 8px;
+    }
+    
+    main .headerfour .headerfourwrapper .support-div form .name-holder {
+        width: 160px;
+        height: 33px;
+        border-radius: 3px;
+        border: 1px solid orange;
+        margin-top: 10px;
+        background-color: orange;
+    }
+    
+    ::placeholder {
+        color: #fff;
+    }
+    
+    main .headerfour .headerfourwrapper .support-div form  .signupbtn {
+        width: 100px;
+        height: 33px;
+        border-radius: 3px;
+        border: 1px solid #fff;
+        margin-top: 10px;
+        color: orange;
+    }
+    
+    main .headerfour .headerfourwrapper .pot {
+        background-color: orange;
+        width: 65%;
+        height: 4px;
+        padding-left: 20px;
+        margin-left: 100px;
+    }
+}
+/*support section ends here*/
+
+main .headerfour .headerfourwrapper .footerdiv-wrapper {
+    background-color: #111;/*blue*/
+    height: 300px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    /*margin-left: 100px;*/
+    width: 69%;
+    display: inline-flexbox;/**/
+    margin: 0 auto;/**/
+    justify-content: space-between;/**/
+    padding-top: 30px;
+}
+
+/*about us section starts here*/
+main .headerfour .headerfourwrapper .footerdiv-wrapper .aboutdiv {
+    width: 230px;
+    background-color: #111;/* blueviolet*/
+}
+
+main .headerfour .headerfourwrapper .footerdiv-wrapper .aboutdiv h2 {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: #fff;
+    padding-bottom: 10px;
+}
+
+main .headerfour .headerfourwrapper .footerdiv-wrapper .aboutdiv p {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 530;
+    color: #fff;
+    padding-top: 5px;
+}
+/*about us section ends here*/
+
+/*useful section starts here*/
+main .headerfour .headerfourwrapper .footerdiv-wrapper .usefullinks-div {
+    background-color: #111;/* brown*/
+    width: 140px;
+}
+
+main .headerfour .headerfourwrapper .footerdiv-wrapper .usefullinks-div h2 {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: #fff;
+    padding-bottom: 2px;
+}
+
+main .headerfour .headerfourwrapper .footerdiv-wrapper .usefullinks-div ul li {
+   list-style: none;
+   padding-top: 12px;
+}
+
+main .headerfour .headerfourwrapper .footerdiv-wrapper .usefullinks-div ul li a {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 530;
+    color: #fff;
+    padding-top: 5px;
+    text-decoration: none;
+}
+/*about us section ends here*/
+
+/*help section starts here*/
+main .headerfour .headerfourwrapper .footerdiv-wrapper .helplinks-div {
+    background-color: #111;/*burlywood*/
+    width: 150px;
+}
+
+main .headerfour .headerfourwrapper .footerdiv-wrapper .helplinks-div h2{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: #fff;
+    padding-bottom: 2px;
+}
+
+main .headerfour .headerfourwrapper .footerdiv-wrapper .helplinks-div ul li {
+    list-style: none;
+   padding-top: 12px;
+}
+
+main .headerfour .headerfourwrapper .footerdiv-wrapper .helplinks-div ul li a {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 530;
+    color: #fff;
+    padding-top: 5px;
+    text-decoration: none;
+}
+/*help section ends here*/
+
+main .headerfour .headerfourwrapper .footerdiv-wrapper .Recentdiv {
+    background-color: #111;/*yellowgreen*/
+    width: 140px;
+}
+
+main .headerfour .headerfourwrapper .footerdiv-wrapper .Recentdiv h2 {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: #fff;
+    padding-bottom: 2px;
+}
+
+@media (max-width: 767px) {
+    main .headerfour .headerfourwrapper .footerdiv-wrapper {
+        background-color: #111;/*blue*/
+        height: 300px;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        /*margin-left: 100px;*/
+        width: 87%;
+        display: inline-flexbox;/**/
+        margin: 0 auto;/**/
+        justify-content: space-evenly;/**/
+        padding-top: 30px;
+    }
+    
+    main .headerfour .headerfourwrapper .footerdiv-wrapper .aboutdiv {
+        width: 230px;
+        background-color: #111;/* blueviolet*/
+        display: none;
+    }
+    
+    main .headerfour .headerfourwrapper .footerdiv-wrapper .usefullinks-div {
+        background-color: #111;/* brown*/
+        width: 140px;
+    }
+    
+    main .headerfour .headerfourwrapper .footerdiv-wrapper .usefullinks-div h2 {
+        font-size: 17px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        color: #fff;
+        padding-bottom: 2px;
+    }
+    
+    main .headerfour .headerfourwrapper .footerdiv-wrapper .usefullinks-div ul li a {
+        font-size: 13px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 530;
+        color: #fff;
+        padding-top: 5px;
+        text-decoration: none;
+    }
+    
+    main .headerfour .headerfourwrapper .footerdiv-wrapper .helplinks-div {
+        background-color: #111;/*burlywood*/
+        width: 160px;
+    }
+    
+    main .headerfour .headerfourwrapper .footerdiv-wrapper .helplinks-div h2{
+        font-size: 17px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        color: #fff;
+        padding-bottom: 2px;
+    }
+     
+    main .headerfour .headerfourwrapper .footerdiv-wrapper .helplinks-div ul li a {
+        font-size: 13px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 530;
+        color: #fff;
+        padding-top: 5px;
+        text-decoration: none;
+    }
+    
+    main .headerfour .headerfourwrapper .footerdiv-wrapper .Recentdiv {
+        background-color: #111;/*yellowgreen*/
+        width: 140px;
+        display: none;
+    }
+
+}
+
+@media  (min-width: 768px) and (max-width: 1024px) {
+
+    main .headerfour .headerfourwrapper .footerdiv-wrapper .aboutdiv {
+        width: 150px;
+        background-color: #111;/* blueviolet*/
+    }
+
+    main .headerfour .headerfourwrapper .footerdiv-wrapper .Recentdiv {
+        background-color: #111;/*yellowgreen*/
+        width: 130px;
+    }
+    
+
+    main .headerfour .headerfourwrapper .footerdiv-wrapper {
+        background-color: #111;/*blue*/
+        height: 300px;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        /*margin-left: 100px;*/
+        width: 91%;
+        display: inline-flexbox;/**/
+        margin: 0 auto;/**/
+        justify-content: space-between;/**/
+        padding-top: 30px;
+    }
+    
+   
+}
+
+footer .headerfive {
+    background-color: grey;
+    height: 60px;
+}
+
+footer .headerfive .footerwrapper {
+    background-color:grey;/*blue*/
+    height: 60px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    /*margin-left: 100px;*/
+    width: 69%;
+    display: inline-flexbox;/**/
+    margin: 0 auto;/**/
+    justify-content: space-between;/**/
+    padding-top: 0px;
+}
+
+footer .headerfive .footerwrapper .copyrightdiv-wrapper {
+    display: flex;
+    margin-top: 20px;
+}
+
+footer .headerfive .footerwrapper .copyrightdiv-wrapper .copyrightdivone {
+    border-right: 2px solid #fff;
+    background-color: grey;
+    height: 20px;
+}
+
+footer .headerfive .footerwrapper .copyrightdiv-wrapper .copyrightdivone p {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    color: #fff;
+    padding-right: 6px;
+    padding-top: 2px;
+}
+
+footer .headerfive .footerwrapper .copyrightdiv-wrapper .copyrightdivtwo {
+    background-color: grey;
+    height: 25px;
+}
+
+footer .headerfive .footerwrapper .copyrightdiv-wrapper .copyrightdivtwo p {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    color: #fff;
+    padding-left: 6px;
+    padding-top: 2px;
+}
+
+
+footer .headerfive .footerwrapper .footerimg-wrapper img {
+    width: 15px;
+    margin: 0 auto;
+    display: block;
+    padding-top: 5px;
+}
+
+footer .headerfive .footerwrapper .footerimg-wrapper {
+   display: flex; 
+   margin-top: 20px;
+}
+
+footer .headerfive .footerwrapper .footerimg-wrapper div {
+    background-color: #fff;
+    margin: 0pc 5px 0px 5px;
+    width: 25px;
+    height: 25px;
+}
+
+@media (max-width: 767px) {
+    
+    footer .headerfive .footerwrapper .copyrightdiv-wrapper .copyrightdivone p {
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 500;
+        color: #fff;
+        padding-right: 6px;
+        padding-top: 2px;
+    }
+
+    footer .headerfive .footerwrapper {
+        background-color: grey;/*blue*/
+        height: 60px;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        /*margin-left: 100px;*/
+        width: 75%;
+        display: inline-flexbox;/**/
+        margin: 0 auto;/**/
+        justify-content: space-between;/**/
+        padding-top: 0px;
+    }
+    
+    footer .headerfive .footerwrapper .copyrightdiv-wrapper .copyrightdivtwo {
+        background-color: grey;
+        height: 25px;
+        display: none;
+    }
+    
+    footer .headerfive .footerwrapper .copyrightdiv-wrapper .copyrightdivtwo p {
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 500;
+        color: #fff;
+        padding-left: 6px;
+    }
+}
